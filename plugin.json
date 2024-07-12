@@ -1,0 +1,22 @@
+{
+  "main": "index.html",
+  "logo": "logo.png",
+  "preload": "preload.js",
+  "features": [
+    {
+      "code": "query json to php array",
+      "explain": "将http query转为php数组",
+      "cmds":[
+        "query to php array",
+        "php array"
+      ]
+    },
+    {
+      "code": "json to php array",
+      "explain": "将json数据转为php数组",
+      "cmds":[
+        "json to php array"
+      ]
+    }
+  ]
+}

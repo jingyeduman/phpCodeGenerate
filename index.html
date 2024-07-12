@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <body>
+        <div style="background-color: #fff">
+            <div>请输入http query(例：test[key1]=value1&test[key2]=value2)或者json(例:{"test":"value"})</div>
+            <div style="margin-top: 10px;">
+                <textarea style="width: 100%; height: 100px;text-align: left;margin: 0px;" id="J_input"></textarea>
+            </div>
+
+            <div style="margin-top: 20px;">转为的PHP Array Code<button id="J_copyPhpCode" style="margin-left: 10px;cursor: pointer">复制</button></div>
+            <div style="border: 1px solid;width: 100%;height: 600px;margin-top: 10px;">
+                <pre id="J_phpCode"  style="white-space: pre-wrap;"></pre>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script type="application/javascript" src="./js/jquery-1.11.0.min.js"></script>
+<script type="application/javascript" src="./js/index.js"></script>
