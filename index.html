@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <meta charset="UTF-8">
-    <body>
+    <body style="margin: 10px;background-color: #fff">
         <div style="background-color: #fff">
             <div>请输入http query(例：test[key1]=value1&test[key2]=value2)或者json(例:{"test":"value"})</div>
             <div style="margin-top: 10px;">
@@ -9,12 +9,15 @@
             </div>
 
             <div style="margin-top: 20px;">转为的PHP Array Code<button id="J_copyPhpCode" style="margin-left: 10px;cursor: pointer">复制</button></div>
-            <div style="border: 1px solid;width: 100%;height: 600px;margin-top: 10px;">
-                <pre id="J_phpCode"  style="white-space: pre-wrap;"></pre>
+            <div class="language-php" style="width: 100%;margin-top: 10px;">
+                <pre style="height: 300px; overflow: auto"><code class="language-php line-numbers" id="J_phpCode"></code></pre>
             </div>
         </div>
     </body>
 </html>
 
+<link rel="stylesheet" href="css/prism.css"  />
+
 <script type="application/javascript" src="./js/jquery-1.11.0.min.js"></script>
+<script type="application/javascript" src="./js/prism.js"></script>
 <script type="application/javascript" src="./js/index.js"></script>

@@ -20,6 +20,9 @@
 
         triggerChange() {
             $("#J_phpCode").html($self.getPhpCode());
+
+            Prism.highlightAll();
+            $('pre').addClass("line-numbers language-php").css("white-space", "pre-wrap");
         },
 
         getPhpCode() {
@@ -37,7 +40,7 @@
 
             let json = {};
             for (let key in oneLevelObj) {
-                let value = json[key];
+                let value = oneLevelObj[key];
                 let keyPath = key.split("[");
                 for (let index in keyPath) {
                     keyPath[index] = keyPath[index].replace(/]+$/g, '')
